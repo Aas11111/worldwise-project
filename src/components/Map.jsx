@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import styles from "./Map.module.css";
-
+import proptypes from "prop-types";
 import {
   MapContainer,
   TileLayer,
@@ -19,12 +19,17 @@ function Map() {
   const maplat = searchParams.get("lat");
   const maplng = searchParams.get("lng");
 
-  useEffect(
-    function () {
-      if (maplat && maplng) setMapPosition([maplat, maplng]);
-    },
-    [maplat, maplng]
-  );
+  // useEffect(
+  //   function () {
+  //     if (maplat && maplng) setMapPosition([maplat, maplng]);
+  //   },
+  //   [maplat, maplng]
+  // );
+  useEffect(() => {
+    if (maplat && maplng) {
+      setMapPosition([Number(maplat), Number(maplng)]);
+    }
+  }, [maplat, maplng]);
   return (
     <div className={styles.mapContainer}>
       <MapContainer
@@ -38,6 +43,7 @@ function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+
         {cities.map((city) => (
           <Marker
             position={[city.position.lat, city.position.lng]}
@@ -56,7 +62,8 @@ function Map() {
 }
 function ChangeCenter({ position }) {
   ChangeCenter.propTypes = {
-    position,
+    // position: proptypes.func,
+    // position: proptypes.arrayOf(proptypes.number).isRequired,
   };
   const map = useMap();
   map.setView(position);

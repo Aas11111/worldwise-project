@@ -4,6 +4,7 @@ import styles from "./CityList.module.css";
 import CityItem from "./CityItem";
 import Message from "./Message";
 import { useCities } from "../contexts/CitiesContext";
+import propTypes from "prop-types";
 
 // Hello.propTypes = {
 //   name: PropTypes.string.isRequired,
@@ -28,5 +29,9 @@ function CityList() {
     </ul>
   );
 }
+// CityList.propTypes = {
+//   cities: propTypes.array,
+//   isLoading: propTypes.bool,
+// };
 
 export default CityList;
