@@ -10,3 +10,25 @@
   align-content: start;
   gap: 1.6rem;
 }
+
+@media screen and (max-width: 56rem) {
+  .countryList {
+    height: 25vh;
+
+    gap: 1.6rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .countryList {
+    height: 20vh;
+
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 31rem) {
+  .countryList {
+    height: 20vh;
+
+    gap: 0.9rem;
+  }
+}

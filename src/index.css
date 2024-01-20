@@ -68,6 +68,34 @@ input:focus {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 52.25rem) {
+  .cta:link,
+  .cta:visited {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .cta:link,
+  .cta:visited {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 32.5rem) {
+  .cta:link,
+  .cta:visited {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+  }
+}
+
 /*
 "importCSSModule": {
     "prefix": "csm",

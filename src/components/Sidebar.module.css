@@ -1,8 +1,8 @@
 .Sidebar {
   flex-basis: 56rem;
+
   background-color: var(--color-dark--1);
   padding: 3rem 5rem 3.5rem 5rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,4 +16,28 @@
 .copyright {
   font-size: 1.2rem;
   color: var(--color-light--1);
+}
+
+@media screen and (max-width: 75rem) {
+  .Sidebar {
+    flex-basis: auto;
+    /* flex-basis: 54rem; */
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 56rem) {
+  .Sidebar {
+    flex-basis: auto;
+
+    width: 100%;
+    height: auto;
+  }
+  .copyright {
+    display: none;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+}
+@media screen and (max-width: 32.5rem) {
 }

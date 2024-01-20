@@ -52,3 +52,93 @@
   background-color: var(--color-brand--1);
   color: var(--color-dark--1);
 }
+
+@media screen and (max-width: 56rem) {
+  .cityItem,
+  .cityItem:link,
+  .cityItem:visited {
+    /* display: flex; */
+    gap: 0.9rem;
+
+    border-radius: 9px;
+    padding: 0.9rem 1.8rem;
+  }
+  .emoji {
+    font-size: 2rem;
+    line-height: 0.8rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .date {
+    font-size: 1.3rem;
+  }
+
+  .deleteBtn {
+    height: 1.9rem;
+
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 37.5rem) {
+  .cityItem,
+  .cityItem:link,
+  .cityItem:visited {
+    gap: 0.6rem;
+
+    border-radius: 9px;
+    padding: 0.7rem 1.6rem;
+  }
+  .emoji {
+    font-size: 1.7rem;
+    line-height: 0.6rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .date {
+    font-size: 1.1rem;
+  }
+
+  .deleteBtn {
+    height: 1.7rem;
+
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 32.5rem) {
+  .cityItem,
+  .cityItem:link,
+  .cityItem:visited {
+    gap: 0.3rem;
+
+    padding: 0.5rem 1.4rem;
+  }
+  .emoji {
+    font-size: 1.5rem;
+    line-height: 0.4rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 550;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .deleteBtn {
+    height: 1.5rem;
+
+    font-size: 1.2rem;
+  }
+}

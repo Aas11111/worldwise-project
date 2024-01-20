@@ -17,3 +17,42 @@
   font-size: 3rem;
   line-height: 1;
 }
+
+@media screen and (max-width: 56rem) {
+  .countryItem {
+    gap: 0.2rem;
+
+    font-size: 1.4rem;
+
+    padding: 1rem 2rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .countryItem {
+    font-size: 1.6rem;
+
+    padding: 1rem 2rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 31rem) {
+  .countryItem {
+    font-size: 1.3rem;
+
+    padding: 0.8rem 1.2rem;
+  }
+
+  .countryItem span:first-child {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+}
