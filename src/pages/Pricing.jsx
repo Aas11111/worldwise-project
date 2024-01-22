@@ -7,19 +7,19 @@ export default function Product() {
     <main className={styles.product}>
       <PageNav />
       <section>
-        <div>
+        <div className="pricing-div">
           <h2>
-            Simple pricing.
-            <br />
-            Just $9/month.
+            <span>Simple pricing.</span>
+            {/* <br /> */}
+            <span>Just $9/month.</span>
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
-            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
-            voluptatem iste.
+            {/* Grindelwald, in Switzerland, skiing in winter and hiking in summer.
+            It's also a base for mountain-climbing ascents up the north face of
+            Eiger Mountain. */}
           </p>
         </div>
-        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+        <img src="img-2.jpg" alt="overview of a grindelwald" />
       </section>
     </main>
   );

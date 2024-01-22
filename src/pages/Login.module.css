@@ -24,3 +24,105 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+button {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 0.8rem 2rem;
+  border-radius: 7px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 56rem) {
+  .form {
+    padding: 2rem 3rem;
+
+    gap: 1.5rem;
+
+    width: 40rem;
+    margin: 5rem auto;
+  }
+
+  .row {
+    gap: 0.5rem;
+  }
+
+  button {
+    padding: 0.8rem 2rem;
+
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 42.5rem) {
+  input[type="email"] {
+    font-size: 1.3rem;
+  }
+  .form {
+    padding: 1.8rem 2.8rem;
+
+    gap: 1rem;
+
+    width: 35rem;
+    margin: 5rem auto;
+  }
+
+  .row {
+    gap: 0.7rem;
+  }
+
+  button {
+    padding: 0.7rem 1.5rem;
+
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 31rem) {
+  input[type="email"] {
+    font-size: 1.1rem;
+  }
+  input[type="password"] {
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+  }
+  .form {
+    padding: 1.8rem 2.8rem;
+
+    gap: 0.5rem;
+
+    width: 28rem;
+    margin: 4rem auto;
+  }
+
+  .row {
+    gap: 0.7rem;
+  }
+
+  button {
+    padding: 0.7rem 1.5rem;
+
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 25.62rem) {
+  input[type="email"] {
+    font-size: 1rem;
+  }
+  input[type="password"] {
+    padding: 0.3rem;
+  }
+
+  .form {
+    padding: 1.7rem 2.5rem;
+
+    gap: 0.5rem;
+
+    width: 21rem;
+    margin: 4rem auto;
+  }
+
+  button {
+    padding: 0.5rem 1.3rem;
+
+    font-size: 1.2rem;
+  }
+}

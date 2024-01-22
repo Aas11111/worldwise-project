@@ -3,8 +3,8 @@ import styles from "./Login.module.css";
 import { useState } from "react";
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState("jack@example.com");
-  const [password, setPassword] = useState("qwerty");
+  const [email, setEmail] = useState("Enter your email...");
+  const [password, setPassword] = useState("");
 
   return (
     <main className={styles.login}>
@@ -31,7 +31,7 @@ export default function Login() {
         </div>
 
         <div>
-          <button>Login</button>
+          <button className="button">Login</button>
         </div>
       </form>
     </main>
