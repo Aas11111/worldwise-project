@@ -10,6 +10,7 @@ function CitiesProvider({ children }) {
   //   children,
   // };
   // console.log(BASE_URL);
+
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentCity, setCurrentCity] = useState({});

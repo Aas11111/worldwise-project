@@ -3,7 +3,7 @@ import styles from "./Login.module.css";
 import { useState } from "react";
 export default function Login() {
   // PRE-FILL FOR DEV PURPOSES
-  const [email, setEmail] = useState("Enter your email...");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   return (
@@ -15,6 +15,7 @@ export default function Login() {
           <input
             type="email"
             id="email"
+            placeholder="Enter email..."
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
