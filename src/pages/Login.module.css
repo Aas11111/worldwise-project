@@ -27,7 +27,7 @@
 
 .loginBtn {
   background-color: var(--color-brand--2);
-  color: var(--color-dark--0);
+  color: #ffff;
   padding: 0.8rem 2rem;
   border-radius: 7px;
   font-size: 1.5rem;

@@ -6,20 +6,28 @@ export default function Homepage() {
     <main className={styles.homepage}>
       <PageNave />
       <section>
-        <h1>
-          You travel the world.
-          <br />
-          WorldWise keeps track of your adventures.
-        </h1>
-        <h2>
-          A world map that tracks your footsteps into every city you can think
-          of. Never forget your wonderful experiences, and show how you have
-          wandered the world.
-        </h2>
-        <Link to="/app" className="cta">
-          start tracking now
-        </Link>
+        {options.map((option, index) => (
+          <div key={index}>
+            <h1>{option.heading}</h1>
+            <h1> {option.subheading}</h1>
+            <h2>{option.description}</h2>
+            <Link to={option.linkTo} className="cta">
+              {option.linkText}
+            </Link>
+          </div>
+        ))}
       </section>
     </main>
   );
 }
+
+const options = [
+  {
+    heading: "You travel the world.",
+    subheading: "WorldWise keeps track of your adventures.",
+    description:
+      "A world map that tracks your footsteps into every city you can think of. Never forget your wonderful experiences, and show how you have wandered the world.",
+    linkText: "start tracking now",
+    linkTo: "/app",
+  },
+];
